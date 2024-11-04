@@ -1,8 +1,10 @@
 nums = [1, 2, 2, 3, 4, 4, 5, 6, 6, 7]
+print("Before: ", nums)
+def removeddup():
+    newlist=[]
+    for items in nums:
+        if items not in newlist:
+            newlist.append(items)
+    print("After: ", newlist)
 
-unique_nums = []
-for num in nums:
-    if num not in unique_nums:
-        unique_nums.append(num)
-
-print(unique_nums)
+removeddup()
